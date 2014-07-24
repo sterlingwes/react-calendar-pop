@@ -35,11 +35,23 @@ module.exports = React.createClass({
   },
   
   goBack: function() {
-    this.setState({ month: this.state.month - 1 });
+	var lastMonth = this.state.month - 1
+	  , lastYear = this.state.year;
+	if(lastMonth<0)	{
+		lastMonth = 11;
+		lastYear--;
+	}
+    this.setState({ month: lastMonth, year: lastYear });
   },
   
   goForward: function() {
-    this.setState({ month: this.state.month + 1 });
+	var nextMonth = this.state.month + 1
+	  , nextYear = this.state.year;
+	if(nextMonth>11) {
+		nextMonth = 0;
+		nextYear++;
+	}
+    this.setState({ month: nextMonth, year: nextYear });
   },
   
   show: function() {
@@ -57,7 +69,7 @@ module.exports = React.createClass({
   onClick: function(e) {
     var t = e.target;
     if(t.className=='calendar_pop_day') {
-      this.props.input.value = $(t).data('cal');
+	  $(this.props.input).focus().val($(t).data('cal')).blur();
       this.setState({ isOpen: false });
     }
   },

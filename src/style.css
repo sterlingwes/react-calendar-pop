@@ -1,16 +1,16 @@
 @font-face {
-	font-family: 'icomoon';
-	src:url('/fonts/icomoon.eot?-lns261');
-	src:url('/fonts/icomoon.eot?#iefix-lns261') format('embedded-opentype'),
-		url('/fonts/icomoon.woff?-lns261') format('woff'),
-		url('/fonts/icomoon.ttf?-lns261') format('truetype'),
-		url('/fonts/icomoon.svg?-lns261#icomoon') format('svg');
+	font-family: 'calpop';
+	src:url('/fonts/calpop.eot?-lns261');
+	src:url('/fonts/calpop.eot?#iefix-lns261') format('embedded-opentype'),
+		url('/fonts/calpop.woff?-lns261') format('woff'),
+		url('/fonts/calpop.ttf?-lns261') format('truetype'),
+		url('/fonts/calpop.svg?-lns261#calpop') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-	font-family: 'icomoon';
+	font-family: 'calpop';
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
