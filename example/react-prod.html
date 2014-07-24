@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>calendar-pop demo</title>
+    <style type="text/css">
+    
+      .inputContainer {
+        position: relative;
+        display: inline-block;
+      }
+      input {
+        padding: 5px;
+      }
+      
+    </style>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  </head>
+  <body>
+    <br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br>
+    
+    <div class="inputContainer">
+      <input type="text" />
+      <div id="datepick"></div>
+    </div>
+    <script src="../dist/react-calpop.min.js"></script>
+    <script>
+      React.renderComponent(CalPop({ 
+        date: new Date(), 
+        input: document.getElementsByTagName('input')[0] 
+      }), document.getElementById('datepick'));
+    </script>
+  </body>
+</html>

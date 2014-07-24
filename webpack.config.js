@@ -2,7 +2,7 @@ module.exports = {
     cache:  true,
     entry:  './export.js',
     output: {
-        path: __dirname,
+        path: __dirname + '/dist',
         filename: 'react-calpop.min.js'
     },
     module: {            
